@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: iconfig
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8849
+        file-extension: yaml
+      discovery:
+        server-addr: localhost:8849 #Nacos服务注册中心地址
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
