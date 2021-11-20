@@ -1,2 +1,3 @@
 # Project exclude paths
 /inacos/target/
+*.idea*
